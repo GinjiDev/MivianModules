@@ -11,16 +11,11 @@
 
 **<p align="center">A set of useful Python functions designed to solve a variety of tasks. The library was created without using third-party dependencies to ensure maximum simplicity and reliability.</p>**
 
-## Особенности
+## Features
 
-- **Множество функций**
-- **Простота использования**
-- **Асинхронность**
+- **Many functions**
+- **Ease of use**
+- **Asynchrony**
 
-## Установка
-
-**Просто установите библиотеку с помощью pip:**
-
-```bash
-pip install MivMultiPack
-```
+## Install
+### Save the library to your project and use it!
