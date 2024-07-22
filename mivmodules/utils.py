@@ -39,3 +39,13 @@ class Utils:
     
     async def translit_to_cyrillic_async(self, translit: str) -> str:
         return self._translit_to_cyrillic(translit)
+    
+    
+    def _word_count(self, text: str) -> int:
+        return len(text.split())
+    
+    def word_count_sync(self, text: str) -> int:
+        return self._word_count(text)
+    
+    async def word_count_async(self, text: str) -> int:
+        return self._word_count(text)

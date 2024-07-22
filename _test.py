@@ -1,6 +1,5 @@
-from mivmodules import utils
+from mivmodules import Utils
 
-eval_go = utils.Utils()
+utils = Utils()
 
-
-print(eval_go.generate_password_sync(length=10, digits=False))
+print(utils.word_count_sync(text="привет, как дела?"))
