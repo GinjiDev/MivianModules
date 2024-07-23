@@ -1,9 +1,9 @@
 import secrets
 import string
-from mivmodules._constants import TRANSLIT_DICT
+from mivmodules.constants import Const
 
 class Utils:
-    def __init__(self, translit_dict: dict = TRANSLIT_DICT) -> None:
+    def __init__(self, translit_dict: dict = Const.TRANSLIT_DICT) -> None:
         self.translit_dict = translit_dict
     
     def _generate_password(self, length: int, digits: int = True) -> str:

@@ -1,5 +1,5 @@
 from .utils import Utils
-from ._constants import *
+from .constants import Const
 
 __title__ = 'MivianModules'
 __author__ = 'ShadDigo'
