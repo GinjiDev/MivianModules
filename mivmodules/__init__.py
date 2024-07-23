@@ -1,6 +1,7 @@
 from .utils import Utils
 from .constants import Const
 from .json_loader import AsyncJSONHandler, SyncJSONHandler
+from .color import get_average_rgb_color
 
 __title__ = 'MivianModules'
 __author__ = 'ShadDigo'
