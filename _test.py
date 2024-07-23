@@ -1,5 +1,5 @@
-from mivmodules import Utils
+from mivmodules import json_loader
 
-utils = Utils()
+load = json_loader.SyncJSONHandler(filepath="js.json").read()
 
-print(utils.translit_to_cyrillic_sync("privet"))
+print(load.get('test1', 0))
