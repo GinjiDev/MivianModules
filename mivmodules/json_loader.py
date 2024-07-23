@@ -6,7 +6,7 @@ class SyncJSONHandler:
         
     def read(self) -> dict:
         try:
-            with open(self.filepath, 'r') as file:
+            with open(self.filepath, 'r', encoding='utf-8-sig') as file:
                 content = file.read()
                 return json.loads(content)
         except Exception as e:
@@ -19,7 +19,7 @@ class AsyncJSONHandler:
         
     async def read(self) -> dict:
         try:
-            with open(self.filepath, 'r') as file:
+            with open(self.filepath, 'r', encoding='utf-8-sig') as file:
                 content = file.read()
                 return json.loads(content)
         except Exception as e:
