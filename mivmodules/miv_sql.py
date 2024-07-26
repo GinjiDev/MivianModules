@@ -46,3 +46,7 @@ class Database:
     async def get_where(self, table, where_clause, *where_args):
         query = f"SELECT * FROM {table} WHERE {where_clause}"
         return await self.fetch_all(query, *where_args)
+    
+    async def get_one(self, select, table, where_clause, *where_args):
+        query = f"SELECT {select} FROM {table} WHERE {where_clause}"
+        return await self.fetch_one(query, *where_args)
